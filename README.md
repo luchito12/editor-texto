@@ -71,7 +71,6 @@
 
 2. **Ejecutar el Programa**:
    - Descarga o clona el repositorio del proyecto a tu computadora.
-   - Asegúrate de que el archivo de icono (por ejemplo, `a.png` o `a.ico`) esté en la misma carpeta que el script.
    - Abre una terminal de Windows (CMD o PowerShell) y navega a la carpeta donde tienes el archivo `EdithorText.py`.
    - Ejecuta el programa con:
      ```bash
@@ -90,7 +89,6 @@
 
 2. **Ejecutar el Programa**:
    - Descarga o clona el repositorio del proyecto a tu computadora.
-   - Asegúrate de que el archivo de icono (por ejemplo, `a.png` o `a.ico`) esté en la misma carpeta que el script.
    - Abre una terminal y navega a la carpeta donde tienes el archivo `EdithorText.py`.
    - Ejecuta el programa con:
      ```bash
