@@ -4,6 +4,7 @@ from tkinter import filedialog, messagebox, simpledialog
 import json
 import os
 import time
+from tkinter import PhotoImage  # Importa PhotoImage
 
 class TextEditorApp:
     def __init__(self, root):
@@ -11,8 +12,9 @@ class TextEditorApp:
         self.root.title("EdithorText - Sin Documento")
         self.root.geometry("600x400")
         
-        # Establecer el ícono de la ventana
-        self.root.iconbitmap("icono.ico")  # Asegúrate de que el archivo icono.ico está en la misma carpeta
+      # Establecer el ícono de la ventana usando PhotoImage
+        self.icon = PhotoImage(file="icono.png")  # Usa el formato correcto como .png
+        self.root.iconphoto(True, self.icon)  # Establecer el icono de la ventana
 
         # Inicializar tamaño de fuente y fuente predeterminada
         self.font_size = 12
@@ -73,6 +75,9 @@ class TextEditorApp:
 
         self.time_label = tk.Label(self.status_bar, text="", bg="lightgray")
         self.time_label.pack(side=tk.RIGHT, padx=5)
+        
+        self.encoding_label = tk.Label(self.status_bar, text=f"Encoding: {self.encoding}", bg="lightgray")
+        self.encoding_label.pack(side=tk.RIGHT, padx=5)  # Mostrar el encoding en la barra de estado
 
         # Añadir un evento de clic sobre la hora para insertarla en el texto
         self.time_label.bind("<Button-1>", self.insert_time_to_text)
